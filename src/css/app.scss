@@ -1,0 +1,280 @@
+// app global css in SCSS form
+
+@media (min-width: 800px){
+  .sm-inpt-left{
+    width: 50%;
+    margin-right: 5px;
+    &.wdth-30 {
+      width: 30%;
+    }
+    &.wdth-70 {
+      width: 70%;
+    }
+  }
+  .sm-inpt-right{
+    width: 50%;
+    margin-left: 5px;
+    &.wdth-30 {
+      width: 30%;
+    }
+    &.wdth-70 {
+      width: 70%;
+    }
+  }
+  .wllt-inpts, .prsl-inputs{
+    display: flex;
+  }
+}
+
+@media (max-width: 799px){
+  .wllt-inpts{
+    border: 1px solid $secondary;
+  }
+}
+
+@media (min-width: 550px){
+  .xsm-inpt-left{
+    padding-right: 5px;
+    &.wdth-30 {
+      width: 35%!important;
+    }
+    &.wdth-70 {
+      width: 65%!important;
+    }
+  }
+  .xsm-inpt-right{
+    padding-left: 5px;
+    &.wdth-30 {
+      width: 30%;
+    }
+    &.wdth-70 {
+      width: 70%;
+    }
+  }
+  .prtcp-inpts, .allocation-impt {
+    display: flex;
+    align-items: center;
+  }
+  .presale-start-input, .presale-end-input {
+    display: flex;
+  }
+  .custom-round-item, .referral-address-item, .vest-participation-item {
+    display: flex;
+    .xsm-inpt-left{
+      margin-bottom: 0!important;
+      min-width: 390px;
+    }
+    .xsm-inpt-right{
+      justify-content: flex-start!important;
+    }
+  }
+}
+
+@media (max-width: 549px){
+  .prtcp-inpts{
+    border: 1px solid $secondary;
+    .pair-inpt {
+      margin-bottom: 0!important;
+    }
+  }
+}
+
+.sm-fixed-inpt-left{
+  width: 50%;
+  padding-right: 5px;
+}
+
+.sm-fixed-inpt-right{
+  width: 50%;
+  padding-left: 5px;
+}
+
+#hdr-c {
+  background-color: #1e2023;
+  .nav-item img {
+    width:35px;
+    height:35px;
+  }
+}
+
+#indx-pg{
+  background-color: #151617;
+  .home-image {
+    width:300px;
+    height:100px;
+  }
+}
+
+#prs-gen-frm{
+  background-color: #151617;
+  padding: 0 10px;
+  .form-container {
+    margin: 30px 0 15px 0;
+    padding: 3px;
+    background-color: #403c3c;
+    max-width: 900px;
+    border: 1px solid $primary;
+    border-radius: 20px;
+    .form-header{
+      line-height: 25px;
+      padding: 23px;
+      .header-text{
+        font-size: 22px;
+        font-weight: bold;
+        color: #fffafa;
+        display: table;
+        margin: 0 auto;
+      }
+    }
+    .step-header{
+      height: 45px;
+      line-height: 25px;
+      background: linear-gradient(90deg, $primary 0%, #51ff70 50%, $primary 100%);
+      color: white;
+      border-radius: 7px;
+      padding: 10px;
+      padding-left: 15px;
+      .step-text{
+        font-size: 14px;
+        font-weight: bold;
+        float: left;
+      }
+    }
+    .step-actions{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .step-btn{
+        margin: 0 3px;
+      }
+    }
+    .confirm-actions{
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      .submit-btn {
+        width: 44%;
+        border-radius: 15px;
+        min-height: 50px;
+      }
+    }
+  }
+  .frm-input {
+    margin-bottom: 12px;
+  }
+  .wllt-inpts {
+    width: 100%;
+  }
+  .center-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+  }
+  .center-items-evenly {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;;
+  }
+  .space-20 {
+    padding: 10px;
+  }
+  .font-size-16{
+    font-size: 16px;
+  }
+  .info-card {
+    border: 2px solid $info;
+    background-color: rgba(49, 204, 236, 0.22) !important;
+    .card-header{
+      padding: 3px;
+    }
+    .info-card-separator{
+      background: $info;
+    }
+    .card-body{
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
+  }
+  .info-card-2 {
+    .card-header{
+      font-weight: bold;
+      font-size: 20px;
+    }
+    .card-body{
+      .left-item,.right-item {
+        width: 50%;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .left-item{
+        text-align: right;
+        padding-right: 15px;
+      }
+      .right-item{
+        padding-left: 15px;
+      }
+      .additional-info{
+        font-size: 12px;
+        font-weight: normal;
+      }
+    }
+  }
+  .error-card {
+    border: 2px solid $negative;
+    background-color: rgba(255, 0, 0, 0.19) !important;
+    .card-header{
+      padding: 3px;
+    }
+    .info-card-separator{
+      background: $negative;
+    }
+    .card-body{
+      padding-top: 6px;
+      padding-bottom: 6px;
+      font-size: 12px;
+    }
+  }
+  .header-filler {
+    padding-top: 50px!important;
+    margin-top: -50px!important;
+  }
+  .listing-rate-inpt, .allocation-section{
+    border: 1px solid $secondary;
+  }
+  .liquidity-inpt, .presale-prediction-inpt{
+    padding: 15px;
+    border: 1px solid $secondary;
+  }
+  .primary-color{
+    color: $primary;
+  }
+  .secondary-color{
+    color: $secondary;
+  }
+  .form-background-color{
+    color: #403c3c;
+  }
+
+  // Copied from uncx
+  .mint-tckn-card {
+    border-radius: 32px;
+    background: linear-gradient(45deg,rgba(80,171,253,.8),rgba(121,84,255,.8));
+    .crd-act-btn {
+      height: 36px;
+      min-width: 64px;
+      padding: 0 16px;
+      background-color: black;
+      border-color: black;
+      font-weight: 500;
+      color: white;
+      border-radius: 28px;
+      box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+      cursor: pointer;
+      align-items: center;
+      display: inline-flex;
+      text-decoration: none;
+      text-indent: 0.0892857143em;
+      user-select: none;
+    }
+  }
+}
